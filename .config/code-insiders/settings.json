@@ -1,0 +1,62 @@
+{
+    "sync.gist": "f511e25de82060c1da2ce3b311d1e8a9",
+    "remote.SSH.remotePlatform": {
+        "144.21.48.121": "linux",
+        "132.145.10.205": "linux"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.colorTheme": "Office Theme (Word)",
+    "docker.images.label": "RepositoryName",
+    "hdinsight.azureEnvironment": "Azure",
+    "hdinsight.disableOpenSurveyLink": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "workbench.trustedDomains.promptInTrustedWorkspace": true,
+    "testing.automaticallyOpenPeekViewDuringAutoRun": true,
+    "workbench.editorAssociations": {
+        "*.exe": "default"
+    },
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "tabnine.experimentalAutoImports": true,
+    "redhat.telemetry.enabled": true,
+    "workbench.iconTheme": "vscode-icons",
+    "gitbook.orgId": "sP0FikhkwMBIj6XezMX4",
+    "Codegeex.Privacy": true,
+    "cloudcode.duetAI.project": "",
+    "csharp.preview.improvedLaunchExperience": true,
+    "dotnet.automaticallySyncWithActiveItem": true,
+    "dotnet.previewSolution-freeWorkspaceMode": true,
+    "dotnet.testWindow.useTestingPlatformProtocol": true
+    {
+        {
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineHeight": 17,
+    "breadcrumbs.enabled": false,
+    "files.autoSave": "afterDelay",
+    "jupyter.themeMatplotlibPlots": true,
+    "jupyter.widgetScriptSources": [
+        "unpkg.com",
+        "jsdelivr.com"
+    ],
+    "notebook.experimental.outputScrolling": true,
+    "files.exclude": {
+        "**/.csv": true,
+        "**/.parquet": true,
+        "**/.pkl": true,
+        "**/.xls": true
+    },
+    "tabnine.experimentalAutoImports": true,
+    "Codegeex.Privacy": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.definitionLinkOpensInPeek": true
+}
+    }
+}

@@ -1,0 +1,7 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+oem_2",
+        "command": "workbench.action.tasks.runTask"
+    }
+]

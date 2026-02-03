@@ -5,7 +5,7 @@
 [init]
 	defaultBranch = master
 [core]
-	editor = \"C:\\Users\\offic\\AppData\\Local\\Programs\\Microsoft VS Code Insiders\\bin\\code-insiders\" --wait
+	editor = code
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	pager = delta
 [web]
@@ -33,7 +33,7 @@
 	changed = yellow bold
 	untracked = red bold
 [diff]
-	tool = vimdiff
+	tool = code
 [difftool]
 	prompt = false
 [delta]
@@ -264,36 +264,26 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-
-
-
-[user]
-	email = officialmofabs@outlook.com
-	name = Moses Fabiyi
-[safe]
-	
-    directory = C:/Users/offic/Documents/dev
-	directory = /home/mosgarage
-	directory = /home/mosgarage/.ssh
-	directory = /home/mosgarage/.devcontainer
-	directory = /home/mosgarage/Projects/devcontainer
-	directory = /home/mosgarage/Projects
-	directory = /home/mosgarage/.gitconfig
-	directory = F:/.securitycenter
-	directory = D:\
-	directory = /home/mosgarage/.env
-	directory = D:/wsl-configs
-	directory = D:/wsl-configurations
-	directory = D:/wslfiles
-	directory = D:/DNS-local-server
-	directory = F:/mosgarage-ddev/_remote_dev_environment.git/dotfiles
-	directory = F:/mosgarage-ddev/_remote_dev_environment.git/mosdotfiles
-[core]
-	autocrlf = true
-	directory = C:/Users/offic
-	directory = C:/Users/offic/Documents/dev
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+[diff]
+    tool = sgdm
+    guitool = sgdm
+[difftool]
+    prompt = false
+[difftool "sgdm"]
+    cmd = "C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe" --nosplash "\"$LOCAL\"" "\"$REMOTE\""
+    path = "C:/Program\\ Files/SourceGear/Common/DiffMerge/"
+[difftool "p4merge"]
+    cmd = p4merge.exe\"$LOCAL\"\"$REMOTE\"
+[merge]
+    tool = p4merge
+[mergetool]
+    keepBackup = false
+    prompt = false
+[mergetool "sgdm"]
+    cmd = "C:/Program\\ Files/SourceGear/Common/DiffMerge/sgdm.exe" --nosplash --merge --result="\"$PWD/$MERGED\"" "\"$PWD/$LOCAL\"" "\"$PWD/$BASE\"" 
+    trustExitCode = true
+    prompt = false
+[mergetool "p4merge"]
+    cmd = "p4merge.exe" "\"$BASE\"" "\"$LOCAL\"" "\"$REMOTE\"" "\"$MERGED\""
+    keepTemporaries = false
+    trustExitCode = true
